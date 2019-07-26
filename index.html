@@ -16,7 +16,6 @@
   <script src="./static/jquery.vmap.min.js"></script>
   <script src="./static/jquery.vmap.asia.js"></script>
   <script src="./static/data.js"></script>
-  <!-- <script src="./static/jquery.vmap.sampledata.js"></script> -->
 </head>
 
 <body>
@@ -26,7 +25,19 @@
     <div class="overlay-bottom"></div>
     <div class="header-nav reveal">
       <div class="row no-gutters justify-content-center">
-        <img src="./static/logo.png" width="120" alt="Капитал.кз" />
+        <div class="col-12 d-flex justify-content-center">
+          <a href="https://kapital.kz"><img src="./static/logo.png" width="180" alt="Капитал.кз" /></a>
+        </div>
+        <div class="col-12 col-md-8 d-flex flex-wrap justify-content-center align-items-center">
+          <a class="kapital-link" href="https://kapital.kz/economic">Экономика</a>
+          <a class="kapital-link" href="https://kapital.kz/finance">Финансы</a>
+          <a class="kapital-link" href="https://kapital.kz/gosudarstvo">Государство</a>
+          <a class="kapital-link" href="https://kapital.kz/business">Бизнес</a>
+          <a class="kapital-link" href="https://kapital.kz/real_estate">Недвижимость</a>
+          <a class="kapital-link" href="https://kapital.kz/tehnology">Технологии</a>
+          <a class="kapital-link" href="https://kapital.kz/lifestyle">Lifestyle</a>
+          <a class="kapital-link" href="https://kapital.kz/special">Спецпроекты</a>
+        </div>
       </div>
     </div>
     <div class="vei-logo reveal-100">
@@ -55,13 +66,10 @@
                 <div class='embed-container'><iframe src='https://www.youtube.com/embed/fgMY-SdvIYk' frameborder='0' allowfullscreen></iframe></div>
             </div>
             <div class="col-12 col-md-5 offset-md-1 reveal">
-                <!-- <p class="quote-text">Все участники VEI получат возможность реализовать свои разработки и идеи в сотрудничестве с Visa или ее партнерами-банками, страховыми компаниями, операторами мобильной связи. Партнерами программы являются крупные компании такие как Alfa Bank, Beeline, Centras Insurance, Halyk Bank, Wooppay, Forte Bank и другие.</p>
+                <p class="quote-text">Проект Visa Everywhere Initiative успешно проходит уже четыре года в 75 странах мира и в этом году мы рады впервые провести его в странах Центральной Азии. Каждый раз, запуская эту программу в новом регионе, мы стремимся привлечь талантливые стартапы с невероятными идеями в сфере платежей, которые позволят решать многие задачи бизнеса, вывести качество обслуживания клиентов на новый уровень и существенно повлиять на культуру инноваций в целом.</p>
                 <div class="separator-quote"></div>
-                <h6>Международный Финансовый Центр «Астана»</h6> -->
-                <p class="quote-text">Visa Everywhere Initiative – это глобальная программа, которая направлена на поддержку финтех-стартапов и развитие финансовых технологий. Проект успешно проходит уже четыре года в 75 странах мира и в этом году мы рады впервые провести его в странах Центральной Азии.</p>
-                <div class="separator-quote"></div>
-                <h6>Евгений Лесняк</h6>
-                <sub>Старший директор Visa по стратегическим партнерствам и финтеху в странах СНГ и Юго-Восточной Европы</sub>
+                <h6>Вера Платонова</h6>
+                <sub>Старший Вице-президент и Директор регионального подразделения компании Visa в странах СНГ и Юго-Восточной Европы</sub>
             </div>
           </div>
         </div>
@@ -179,13 +187,13 @@
       <div class="container-fluid featured-videos">
         <div class="row">
           <div class="col-12 col-md-4 reveal">
-            <div class='embed-container'><iframe src='https://www.youtube.com/embed/fgMY-SdvIYk' frameborder='0' allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/bGFE9ycVED8' frameborder='0' allowfullscreen></iframe></div>
           </div>
           <div class="col-12 col-md-4 reveal-100">
-            <div class='embed-container'><iframe src='https://www.youtube.com/embed/fgMY-SdvIYk' frameborder='0' allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/fjFXfC-e3Mo' frameborder='0' allowfullscreen></iframe></div>
           </div>
           <div class="col-12 col-md-4 reveal-200">
-            <div class='embed-container'><iframe src='https://www.youtube.com/embed/fgMY-SdvIYk' frameborder='0' allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/ObWFLtnaqms' frameborder='0' allowfullscreen></iframe></div>
           </div>
         </div>
       </div>
@@ -469,7 +477,7 @@
                 <span>${currentData.country_name}</span>
               </div>
               <h3>${el.name}</h3>
-              <a href="http://${el.website}">Перейти на сайт</a>
+              <a target="_blank" rel="noopener noreferrer" href="http://${el.website}">Перейти на сайт</a>
               <p>${el.description}</p>
               <i>Победитель Visa Everywhere Initiative Central Asia</i>
             </div>
@@ -491,7 +499,7 @@
       currentData.finalists.forEach(el => {
         finalistsRow.append(`<div class="fi-item">
             <h3>${el.name}</h3>
-            <a href="http://${el.website}">Веб-сайт</a>
+            <a target="_blank" rel="noopener noreferrer" href="http://${el.website}">Веб-сайт</a>
             <p>${el.description}</p>
           </div>`);
       });

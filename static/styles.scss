@@ -127,6 +127,19 @@ header{
     width: 100%;
     margin: 50px auto;
     max-width: $globalMaxWidth;
+
+    a{
+      margin: 8px !important;
+      font-weight: 300;
+      &:link, &:visited{
+        color: rgba($white, .7);
+        text-decoration: none;
+      }
+
+      &:hover{
+        color: $white;
+      }
+    }
   }
 
   .vei-logo{
@@ -139,7 +152,7 @@ header{
       display: block;
       width: fit-content;
       padding: 40px;
-      background: $white;
+      background: rgba($white, .8);
     }
   }
 
