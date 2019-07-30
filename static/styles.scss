@@ -92,7 +92,8 @@ h6{
 header{
   width: 100%;
   margin: 0;
-  background: $headerBgr center bottom no-repeat / cover;
+  background: $headerBgr center bottom no-repeat;
+  background-size: cover;
   overflow: auto;
   position: relative;
   z-index: 1;
@@ -207,7 +208,8 @@ header{
 .quotes{
   // margin-top: 50px;
   padding: 20px;
-  background: $quotes top right no-repeat / 91px 61px;
+  background: $quotes top right no-repeat;
+  background-size: 91px 61px;
 
   .quote-text{
     font-size: .900em;
