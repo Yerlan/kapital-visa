@@ -252,6 +252,11 @@ header{
   text-align: center;
   margin: 50px auto;
 
+  &.article-title{
+    color: $black;
+    margin: 20px auto;
+  }
+
   &:after{
     content: "";
     display: block;
@@ -871,4 +876,87 @@ footer{
   padding-bottom: 80px;
   overflow: auto;
   clear: both;
+}
+
+.separator{
+  width: 80px;
+  height: 4px;
+  margin: 40px auto;
+  background: $visaBlue;
+}
+
+.article-item{
+  transition: all .180s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 20px auto;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid rgba($black, .1);
+  align-items: center;
+
+  &:hover{
+    transform: scale(1.01);
+    -webkit-box-shadow: 0px 10px 24px -8px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 10px 24px -8px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 24px -8px rgba(0,0,0,0.1);
+  }
+
+  img{
+    height: 100%;
+    width: 100%;
+    max-width: 100px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
+    img{
+      display: none;
+    }
+  }
+
+  &:link, &:visited{
+    text-decoration: none;
+  }
+
+  .article-details{
+    padding: 10px 20px;
+    text-decoration: none;
+
+    @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
+      padding: 20px;
+    }
+
+    h2{
+      font-size: 17px;
+      line-height: 22px;
+      margin: 5px 0 0 0;
+      color: $black;
+    }
+
+    sub{
+      font-size: 14px;
+      line-height: 18px;
+      color: rgba($black, .6);
+      display: block;
+      margin: 0;
+    }
+
+    i{
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      margin: 5px 0;
+      color: $visaGold;
+    }
+
+    span{
+      font-size: 13px;
+      color: #016937;
+      font-weight: 500;
+      line-height: 13px;
+      display: block;
+    }
+  }
 }
